@@ -1,0 +1,11 @@
+<%#= form_for [:admin, @store, @store_email], url: @store_email.new_record? ? admin_store_additional_store_settings_path(store_id: @store.id) : admin_store_additional_store_setting_path(store_id: @store.id, id: @store_email.id) do |f| %>
+<!--  <h4><%#= t('additional_store_settings.store_email.title') %></h4>-->
+<!--  <fieldset class="no-border-top">-->
+    <%#= render 'store_email_form', f: f %>
+    <%# if can? :update, @store %>
+<!--      <div class="form-buttons filter-actions actions" data-hook="buttons">-->
+        <%#= button_tag t('spree.actions.update'), class: 'btn btn-primary' %>
+<!--      </div>-->
+    <%# end %>
+<!--  </fieldset>-->
+<%# end %>

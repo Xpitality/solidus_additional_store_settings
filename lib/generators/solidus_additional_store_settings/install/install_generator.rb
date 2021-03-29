@@ -6,8 +6,12 @@ module SolidusAdditionalStoreSettings
       class_option :auto_run_migrations, type: :boolean, default: false
       source_root File.expand_path('templates', __dir__)
 
-      def copy_initializer
-        template 'initializer.rb', 'config/initializers/solidus_additional_store_settings.rb'
+      def copy_forms
+        template '_forms.html.erb', 'views/spree/admin/solidus_additional_store_settings/_forms.html.erb'
+      end
+
+      def copy_controller
+        template 'additional_store_settings_controller.rb', 'controllers/spree/admin/additional_store_settings_controller.rb'
       end
 
       def add_javascripts
