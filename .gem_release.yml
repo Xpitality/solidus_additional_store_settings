@@ -1,0 +1,5 @@
+bump:
+  recurse: false
+  file: 'lib/solidus_additional_store_settings/version.rb'
+  message: Bump SolidusAdditionalStoreSettings to %{version}
+  tag: true
