@@ -1,7 +1,7 @@
 module SolidusAdditionalStoreSettings
   module Spree
     module StoreDecorator
-      has_many :additional_store_settings, dependent: :destroy, class_name: "Spree::AdditionalStoreSetting"
+      has_many :additional_store_settings, dependent: :destroy, class_name: "::SolidusAdditionalStoreSettings::AdditionalStoreSetting"
 
       ::Spree::Store.prepend.self
     end
